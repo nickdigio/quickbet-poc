@@ -4,7 +4,7 @@
 	<title></title>
 </head>
 <body>
-	<form autocomplete="on" method="POST">
+	<form autocomplete="on" method="POST" onsubmit="login()">
 		<label for="uname"><b>Username</b></label>
 		<input type="text" placeholder="Enter Username" name="uname" autocomplete="on">
 		
@@ -12,5 +12,11 @@
 		<input type="password" placeholder="Enter Password" name="psw" autocomplete="on">
 		<button type="submit">Login</button>
 	</form>
+	<script>
+		function login() {
+			console.log('login');
+			return false;
+		}
+	</script>
 </body>
 </html>
